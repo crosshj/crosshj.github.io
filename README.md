@@ -3,8 +3,8 @@
 #### major focus:
 _I have a clear vision and I use and actively develop these projects._
 
-[cents](/cents) - personal finance   
-[ha-bridge-js](/ha-bridge-js) - home automation    
+[cents](https://github.com/crosshj/cents) - personal finance   
+[ha-bridge-js](https://github.com/crosshj/ha-bridge-js) - home automation    
 
 
 #### WIP code:
