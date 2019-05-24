@@ -14,9 +14,9 @@
 section {
     padding-top: 30px !important;
     float:none;
-    width: 75% !important; 
-    min-width: 500px !important;
-    max-width: 900px !important;
+    width: unset !important; 
+    /* min-width: 500px !important; */
+    /* max-width: 900px !important; */
 }
 .wrapper {
     background-color: #ffffff03 !important;
