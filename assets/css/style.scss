@@ -18,11 +18,18 @@ section {
 html {
     font-size: 18px !important;
     line-height: 1.6 !important;
+    background-color: #101214 !important;
 }
 
 body {
     font-size: 18px !important;
     font-weight: 400 !important;
-    background-color: #fff !important;
     -webkit-font-smoothing: antialiased !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(95, 208, 95) !important;
+    margin-top: 40px !important;
+    margin-bottom: 12px !important;
+    text-decoration: overline !important;
 }
