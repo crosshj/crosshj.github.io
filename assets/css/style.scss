@@ -13,6 +13,9 @@
 
 section {
     float:none;
+    width: 75% !important; 
+    min-width: 500px !important;
+    max-width: 900px !important;
 }
 .wrapper {
     margin: auto;
