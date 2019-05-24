@@ -52,16 +52,16 @@ section {
 }
 
 html {
-    font-family: "Spoqa Han Sans","Source Sans Pro",Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,Verdana,Arial,Dotum,sans-serif;
-    font-size: 18px;
-    line-height: 1.6
+    font-family: "Spoqa Han Sans","Source Sans Pro",Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,Verdana,Arial,Dotum,sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.6 !important;
 }
 
 body {
-    font: "Spoqa Han Sans","Source Sans Pro",Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,Verdana,Arial,Dotum,sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #343a40;
-    background-color: #fff;
-    -webkit-font-smoothing: antialiased
+    font: "Spoqa Han Sans","Source Sans Pro",Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,Verdana,Arial,Dotum,sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: #343a40 !important;
+    background-color: #fff !important;
+    -webkit-font-smoothing: antialiased !important;
 }
