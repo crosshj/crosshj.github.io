@@ -8,6 +8,7 @@
   --three-color: #6F2232;
   --four-color: #950740;
   --five-color: #C3074F;
+  --six-color: #CECECE;
 }
 
 section {
@@ -28,22 +29,22 @@ body {
     font-size: 18px !important;
     font-weight: 400 !important;
     background-color: var(--one-color) !important;
-    color:  var(--two-color) !important;
+    color:  var(--six-color) !important;
     -webkit-font-smoothing: antialiased !important;
 }
 
 a {
-    color: var(--three-color) !important;
+    color: var(--four-color) !important;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-top: 40px !important;
     margin-bottom: 12px !important;
     text-decoration: overline !important;
 }
-h1, h2, h3, h4, h5, h6 {
-    color: var(--four-color) !important;
+h1 {
+    color: var(--three-color) !important;
 }
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     color: var(--five-color) !important;
 }
 
