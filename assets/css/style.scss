@@ -35,19 +35,15 @@ body {
     font-weight: 400 !important;
     background-color: var(--one-color) !important;
     color:  var(--six-color) !important;
-    -webkit-font-smoothing: antialiased !important;
 }
-
 em {
   color:  var(--two-color) !important;
 }
-
 a {
     color: var(--five-color) !important;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 12px !important;
-    text-decoration: overline !important;
 }
 h1 {
     color: var(--four-color) !important;
@@ -55,5 +51,6 @@ h1 {
 h2, h3, h4, h5, h6 {
     color: var(--three-color) !important;
     margin-top: 55px !important;
+    text-decoration: overline !important;
 }
 
