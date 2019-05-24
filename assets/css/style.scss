@@ -33,8 +33,12 @@ body {
     -webkit-font-smoothing: antialiased !important;
 }
 
+em {
+  color:  var(--two-color) !important;
+}
+
 a {
-    color: var(--four-color) !important;
+    color: var(--five-color) !important;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-top: 40px !important;
@@ -42,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: overline !important;
 }
 h1 {
-    color: var(--five-color) !important;
+    color: var(--four-color) !important;
 }
 h2, h3, h4, h5, h6 {
     color: var(--three-color) !important;
