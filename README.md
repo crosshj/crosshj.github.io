@@ -1,5 +1,12 @@
 # crosshj.com
 
+Hello.  I am this Harrison, another person.
+
+One of the main things I do is create things, often with computer aid.  Hint: see below.
+
+Having trouble remembering my email address?  Try inventing or choosing a word and adding @crosshj.com to it!
+
+
 #### major focus:
 _I have a clear vision and I use and actively develop these projects._
 
