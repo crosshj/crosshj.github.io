@@ -2,7 +2,7 @@
 ---
 @import "{{ site.theme }}";
 
-element {
+:root {
   --one-color: #1A1A1D; /* background */
   --two-color: #4E4E50;
   --three-color: #6F2232;
