@@ -6,7 +6,7 @@ Hello.  I am this Harrison, another person.
 
 One of the main things I do is create things, often with computer aid.  Hint: see below.
 
-Having trouble remembering my email address?  Try inventing or choosing a word and adding @crosshj.com to it!
+_Having trouble remembering my email address?  Try inventing or choosing a word and adding @crosshj.com to it!_
 
 
 #### major focus:
