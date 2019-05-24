@@ -1,20 +1,24 @@
 ---
 ---
-
 @import "{{ site.theme }}";
+
+element {
+  --one-color: #1A1A1D; /* background */
+  --two-color: #4E4E50;
+  --three-color: #6F2232;
+  --four-color: #950740;
+  --five-color: #C3074F;
+}
 
 section {
     float:none;
 }
-
 .wrapper {
-    /* width: 860px; */
     margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 html {
     font-size: 18px !important;
     line-height: 1.6 !important;
@@ -23,13 +27,23 @@ html {
 body {
     font-size: 18px !important;
     font-weight: 400 !important;
-    background-color: #101214 !important;
+    background-color: var(--one-color) !important;
+    color:  var(--two-color) !important;
     -webkit-font-smoothing: antialiased !important;
 }
 
+a {
+    color: var(--three-color) !important;
+}
 h1, h2, h3, h4, h5, h6 {
-    color: rgb(95, 208, 95) !important;
     margin-top: 40px !important;
     margin-bottom: 12px !important;
     text-decoration: overline !important;
 }
+h1, h2, h3, h4, h5, h6 {
+    color: var(--four-color) !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--five-color) !important;
+}
+
