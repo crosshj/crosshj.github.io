@@ -7,3 +7,10 @@ section {
     float:none;
 }
 
+.wrapper {
+    /* width: 860px; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
