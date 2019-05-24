@@ -1,5 +1,7 @@
 # crosshj.com
 
+![image](https://user-images.githubusercontent.com/1816471/58348717-6683ff00-7e2f-11e9-8438-b05e860c666e.png)
+
 Hello.  I am this Harrison, another person.
 
 One of the main things I do is create things, often with computer aid.  Hint: see below.
