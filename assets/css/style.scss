@@ -41,7 +41,6 @@ a {
     color: var(--five-color) !important;
 }
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 40px !important;
     margin-bottom: 12px !important;
     text-decoration: overline !important;
 }
@@ -50,5 +49,6 @@ h1 {
 }
 h2, h3, h4, h5, h6 {
     color: var(--three-color) !important;
+    margin-top: 100px !important;
 }
 
