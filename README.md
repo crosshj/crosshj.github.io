@@ -1,6 +1,6 @@
 # crosshj.com
 
-![image](https://user-images.githubusercontent.com/1816471/58351130-e4e39f80-7e35-11e9-98fd-313c688de359.png)
+![image](https://user-images.githubusercontent.com/1816471/58351208-1b211f00-7e36-11e9-88d9-43dfbc4edb89.png)
 
 Hello.  I am this Harrison, another person.
 
