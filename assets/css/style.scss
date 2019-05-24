@@ -12,12 +12,14 @@
 }
 
 section {
+    padding-top: 15px !important;
     float:none;
     width: 75% !important; 
     min-width: 500px !important;
     max-width: 900px !important;
 }
 .wrapper {
+    color: #ffffff03 !important;
     margin: auto;
     display: flex;
     align-items: center;
@@ -34,6 +36,8 @@ body {
     background-color: var(--one-color) !important;
     color:  var(--six-color) !important;
     -webkit-font-smoothing: antialiased !important;
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
 em {
