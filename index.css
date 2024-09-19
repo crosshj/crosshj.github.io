@@ -27,6 +27,29 @@ body {
 	overflow-x: hidden;
 }
 
+#splash {
+	width: 100vw;
+	min-height: 60vh;
+	position: relative;
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+	padding-top: 5vh;
+	box-shadow:
+		inset 0 -115px 68px #121212,
+		inset 0 -115px 68px #121212;
+}
+#splash .background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #444;
+	z-index: -1;
+	opacity: 0.3;
+}
+
 .container {
 	width: 100%;
 	padding: 0 20px;
@@ -66,8 +89,9 @@ header .container {
 
 .logo {
 	font-size: 2em;
-	margin-right: 10px;
-	width: 24px;
+	margin-right: 5px;
+	width: 23px;
+	margin-bottom: 2px;
 }
 
 header h1 {
@@ -119,29 +143,6 @@ nav a:hover {
 	font-size: 1.2em;
 	max-width: 800px;
 	margin: 0 auto;
-}
-
-#splash {
-	width: 100vw;
-	min-height: 60vh;
-	position: relative;
-	margin-top: 80px;
-	display: flex;
-	justify-content: center;
-	padding-top: 5vh;
-	box-shadow:
-		inset 0 -115px 68px #121212,
-		inset 0 -115px 68px #121212;
-}
-#splash .background {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #444;
-	z-index: -1;
-	opacity: 0.3;
 }
 
 footer {
