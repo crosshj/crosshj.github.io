@@ -1,0 +1,50 @@
+{
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        // "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "README.md": "package.json, .npmrc, .prettier*, .git*, LICENSE, CNAME",
+        "sw.js": "manifest.json",
+        "*.js": "${capture}.css,${capture}.html,${capture}.fixtures.js,${capture}.md,${capture}.worker.js,${capture}.components.js"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "node_modules": true,
+        ".well-known": true,
+        ".github": false,
+        ".server": true,
+        "web": true,
+        "vendor": true,
+        "serviceWorker": false
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ts": "explicit",
+      "source.fixAll": "explicit"
+    },
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "extensions.autoUpdate": true,
+    "extensions.recommendations": [
+      "eslint",
+      "prettier"
+    ],
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "prettier.requireConfig": true,
+    "debug.console.closeOnEnd": true,
+    "workbench.panel.defaultLocation": "right"
+}

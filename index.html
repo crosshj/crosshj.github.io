@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Harrison Cross</title>
+		<meta name="author" content="" />
+		<meta
+			name="viewport"
+			content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, interactive-widget=resizes-content"
+		/>
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="color-scheme" content="dark light" />
+		<link rel="icon" type="image/png" href="assets/star.svg" />
+
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:url" content="https://crosshj.com" />
+		<meta property="og:type" content="game" />
+		<meta property="og:title" content="CNCFsweeper" />
+		<meta
+			property="og:description"
+			content="Personal website and portfolio for Harrison Cross, software developer and creator."
+		/>
+		<meta
+			property="og:image"
+			content="https://crosshj.com/assets/screenshot.png"
+		/>
+		<meta property="og:image:width" content="1920" />
+		<meta property="og:image:height" content="885" />
+		<meta property="og:image:alt" content="Preview image of crosshj.com." />
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="twitter:domain" content="teedee.us" />
+		<meta property="twitter:url" content="https://crosshj.com" />
+		<meta
+			name="twitter:image"
+			content="https://crosshj.com/assets/screenshot.png"
+		/>
+
+		<!-- styles -->
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header-left">
+					<div class="logo">
+						<img src="assets/star.svg" alt="Star Icon" />
+					</div>
+					<h1>Harrison Cross</h1>
+				</div>
+				<div class="hamburger" onclick="toggleMenu()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<nav id="nav-menu">
+					<a href="#work">Work</a>
+					<a href="#services">Services</a>
+					<a href="#about">About</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<div id="splash" class="">
+			<div class="background"></div>
+		</div>
+
+		<main>
+			<div class="container">
+				<section id="work" class="section">
+					<h2>Work</h2>
+					<div>
+						<p>Insert work history here.</p>
+						<p>Insert personal projects here.</p>
+					</div>
+				</section>
+
+				<section id="services" class="section">
+					<h2>Services</h2>
+					<div>
+						<p>Insert services offered here.</p>
+					</div>
+				</section>
+
+				<section id="about" class="section">
+					<h2>About</h2>
+					<div>
+						<p>Insert about information here.</p>
+					</div>
+				</section>
+
+				<section id="contact" class="section">
+					<h2>Contact</h2>
+					<div>
+						<p>Insert contact information here.</p>
+					</div>
+				</section>
+
+				<footer>
+					&copy; 2024 Harrison Cross. All rights reserved.
+				</footer>
+			</div>
+		</main>
+
+		<script>
+			function toggleMenu() {
+				const navMenu = document.getElementById('nav-menu');
+				navMenu.classList.toggle('active');
+			}
+		</script>
+		<script src="index.js"></script>
+	</body>
+</html>

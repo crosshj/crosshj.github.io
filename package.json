@@ -1,0 +1,20 @@
+{
+	"name": "tower.defense",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch": "ws --port 9090",
+		"pretty": "prettier --write \"./**/*.{js,mjs,json,html,css,svg}\""
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"local-web-server": "5.3.3",
+		"prettier": "^3.3.3"
+	}
+}
