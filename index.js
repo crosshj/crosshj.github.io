@@ -71,8 +71,8 @@ const getRenderFunction = (args, callback) => {
 		resolutionUniformLocation,
 		timeUniformLocation,
 		positionBuffer,
-		fps = 10,
-		speed = 2,
+		fps = 15,
+		speed = 0.5,
 	} = args;
 	const interval = 1000 / fps; // Time per frame in milliseconds
 	let lastFrameTime = 0;

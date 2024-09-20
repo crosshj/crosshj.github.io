@@ -48,7 +48,7 @@ body {
 	height: 100%;
 	background: url('assets/splash.webp') no-repeat right bottom;
 	z-index: -1;
-	filter: grayscale(1);
+	filter: grayscale(0.3);
 }
 #splash #backgroundCanvas {
 	position: absolute;
@@ -155,8 +155,8 @@ nav a:hover {
 }
 
 .section p {
-	/* font-size: 1.2em; */
-	/* font-weight: 100; */
+	font-size: 1.1em;
+	font-weight: 100;
 	max-width: 800px;
 	margin: 0 auto;
 	text-align: left;
