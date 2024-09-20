@@ -28,6 +28,11 @@ body {
 	overflow-x: hidden;
 }
 
+.highlight {
+	color: #bada55;
+	font-weight: 900;
+}
+
 #splash {
 	width: 100vw;
 	min-height: 60vh;

@@ -161,7 +161,55 @@ const setupGL = (canvas) => {
 	};
 };
 
+const consoleMessage = () => {
+	const colors = [
+		'#CC3333',
+		'#CC6633',
+		'#CCCC33',
+		'#33CC33',
+		'#33CCCC',
+		'#3366CC',
+		'#6633CC',
+	];
+
+	const art = `
+    ..   
+    .uef^"                 ..          888B. 
+  :d88E                   @L          48888E 
+  '888E            .u    9888i   .dL  '8888' 
+    888E .z8k    ud8888.  'Y888k:*888.  Y88F  
+    888E~?888L :888'8888.   888E  888I  '88   
+    888E  888E d888 '88%"   888E  888I   8F   
+    888E  888E 8888.+"      888E  888I   4    
+    888E  888E 8888L        888E  888I   .    
+    888E  888E '8888c. .+  x888N><888'  u8N.  
+   m888N= 888>  "88888%     "88"  888  "*88%  
+    'Y"   888     "YP'            88F    ""   
+        J88"                    98"          
+        @%                    ./"            
+      :"                     ~'              
+  `;
+
+	console.log(
+		art
+			.split('\n')
+			.map((line, index) => `%c${line}`)
+			.join('\n'),
+		...art
+			.split('\n')
+			.map(
+				(_, index) =>
+					`color: ${colors[index % colors.length]}; font-size: 14px;`
+			)
+	);
+	console.log(
+		'%c    👀   U TRYNA HACK MY SYSTEM ?!?!   👀',
+		'font-family:sans-serif; color: yellow; font-size: 22px;'
+	);
+};
+
 const DOMContentLoaded = () => {
+	consoleMessage();
 	const canvas = document.getElementById('backgroundCanvas');
 	canvas.width = Math.max(window.innerWidth / 10, 400);
 	canvas.height = Math.max(window.innerHeight / 10, 300);
