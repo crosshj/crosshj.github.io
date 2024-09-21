@@ -2,14 +2,16 @@
 	"name": "crosshj.com",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "",
+	"type": "module",
 	"directories": {
 		"test": "test"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"watch": "nodemon --config local/nodemon.json",
-		"pretty": "prettier --write \"./**/*.{js,mjs,json,html,css,svg}\""
+		"pretty": "prettier --write \"./**/*.{js,mjs,json,html,css,svg}\"",
+		"buildCI": "node .github/buildCI.js"
 	},
 	"author": "",
 	"license": "ISC",

@@ -2,11 +2,7 @@ import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import { minify } from 'html-minifier';
 
-export const compile = async ({ index }) => {
-	const dom = new JSDOM(index);
-	const { document } = dom.window;
-
-	// inline images
+const inlineElements = ({ document }) => {
 	const images = document.querySelectorAll('img');
 	images.forEach((img) => {
 		if (img.src.endsWith('.svg')) {
@@ -74,7 +70,7 @@ export const compile = async ({ index }) => {
 	});
 
 	// inline favicon
-	function encodeSVG(data) {
+	const encodeSVG = (data) => {
 		const symbols = /[\r\n%#()<>?[\\\]^`{|}]/g;
 		const externalQuotesValue = `double`;
 		if (externalQuotesValue === `double`) {
@@ -86,7 +82,7 @@ export const compile = async ({ index }) => {
 		data = data.replace(/\s{2,}/g, ` `);
 		data = data.replace(symbols, (match) => encodeURIComponent(match));
 		return data;
-	}
+	};
 	const favicon = document.querySelector('link[rel="icon"]');
 	if (favicon) {
 		const href = favicon.getAttribute('href');
@@ -95,9 +91,15 @@ export const compile = async ({ index }) => {
 		const encoded = encodeSVG(svg);
 		favicon.href = `data:image/svg+xml,${encoded}`;
 	}
-	const serialized = dom.serialize();
+};
 
-	//minify html
+export const compile = async ({ index }) => {
+	const dom = new JSDOM(index);
+	const { document } = dom.window;
+
+	inlineElements({ document });
+
+	const serialized = dom.serialize();
 	const minified = minify(serialized, {
 		minifyCSS: { level: 2 },
 		minifyJS: true,

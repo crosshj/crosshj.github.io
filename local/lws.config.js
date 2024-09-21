@@ -1,4 +1,4 @@
-const stack = ['local/lws.plugin.mjs', 'lws-rewrite', 'lws-static'];
+const stack = ['local/lws.plugin.js', 'lws-rewrite', 'lws-static'];
 
 console.log(''); // add a blank line for readability
 

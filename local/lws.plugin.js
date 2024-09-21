@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { compile } from '../compile.mjs';
+import { compile } from '../compile.js';
 
 const sendCompiledHTML = async (ctx) => {
 	ctx.set('Content-Type', 'text/html; charset=utf-8');
