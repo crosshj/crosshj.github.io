@@ -379,7 +379,8 @@ button.danger {
 	/* font-size: 1.5em; */
 	margin: 0;
 }
-.project-logo img {
+.project-logo img,
+.project-logo svg {
 	width: 128px;
 	height: 128px;
 	object-fit: cover;

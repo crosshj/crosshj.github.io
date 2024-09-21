@@ -210,6 +210,13 @@ const consoleMessage = () => {
 
 const DOMContentLoaded = () => {
 	consoleMessage();
+
+	function toggleMenu() {
+		const navMenu = document.getElementById('nav-menu');
+		navMenu.classList.toggle('active');
+	}
+	document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+
 	const canvas = document.getElementById('backgroundCanvas');
 	canvas.width = Math.max(window.innerWidth / 10, 400);
 	canvas.height = Math.max(window.innerHeight / 10, 300);

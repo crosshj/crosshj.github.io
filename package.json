@@ -1,5 +1,5 @@
 {
-	"name": "tower.defense",
+	"name": "crosshj.com",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -8,13 +8,17 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"watch": "ws --port 9090",
+		"watch": "nodemon --config local/nodemon.json",
 		"pretty": "prettier --write \"./**/*.{js,mjs,json,html,css,svg}\""
 	},
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"clean-css": "^5.3.3",
+		"html-minifier": "^4.0.0",
+		"jsdom": "^25.0.0",
 		"local-web-server": "5.3.3",
+		"nodemon": "^3.1.7",
 		"prettier": "^3.3.3"
 	}
 }

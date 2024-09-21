@@ -1,0 +1,7 @@
+{
+	"watch": ["./local", "compile.mjs"],
+	"ext": "js,mjs,json",
+	"exec": "lws -c local/lws.config.mjs",
+	"ignore": ["node_modules"],
+	"verbose": false
+}

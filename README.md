@@ -31,3 +31,7 @@ from 'sandbox' and 'experiments'
 
 [@github](https://github.com/crosshj) - source for the above and more  
 [@pocket](http://sharedli.st/crosshj) - things I read
+
+#### optimize
+
+https://jakearchibald.github.io/svgomg/

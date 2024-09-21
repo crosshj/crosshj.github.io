@@ -21,10 +21,6 @@
         "node_modules": true,
         ".well-known": true,
         ".github": false,
-        ".server": true,
-        "web": true,
-        "vendor": true,
-        "serviceWorker": false
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {

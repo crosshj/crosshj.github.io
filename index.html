@@ -11,7 +11,7 @@
 		/>
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta name="color-scheme" content="dark light" />
-		<link rel="icon" type="image/png" href="assets/logo.svg" />
+		<link rel="icon" type="image/svg" href="assets/logo.svg" />
 
 		<!-- Open Graph Meta Tags -->
 		<meta property="og:url" content="https://crosshj.com" />
@@ -38,12 +38,6 @@
 			content="https://crosshj.com/assets/screenshot.webp"
 		/>
 
-		<!-- preload -->
-		<link rel="preload" href="index.css" as="style" />
-		<link rel="preload" href="assets/splash.webp" as="image" />
-		<link rel="preload" href="assets/logo.svg" as="image" />
-		<link rel="preload" href="index.js" as="script" />
-
 		<!-- styles -->
 		<link rel="stylesheet" href="index.css" />
 	</head>
@@ -68,7 +62,7 @@
 					</div>
 					<h1>Harrison Cross</h1>
 				</div>
-				<div class="hamburger" onclick="toggleMenu()">
+				<div class="hamburger">
 					<div></div>
 					<div></div>
 					<div></div>
@@ -352,12 +346,6 @@
 			</footer>
 		</main>
 
-		<script>
-			function toggleMenu() {
-				const navMenu = document.getElementById('nav-menu');
-				navMenu.classList.toggle('active');
-			}
-		</script>
 		<script src="index.js"></script>
 	</body>
 </html>
