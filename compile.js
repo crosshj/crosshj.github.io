@@ -1,6 +1,7 @@
 import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import { minify } from 'html-minifier';
+import { projectDetails } from './portfolioData.js';
 
 const inlineElements = ({ document }) => {
 	const images = document.querySelectorAll('img');
@@ -93,10 +94,36 @@ const inlineElements = ({ document }) => {
 	}
 };
 
+const addProjects = ({ document }) => {
+	const projectDiv = (project) => `
+	<div class="project">
+		<!-- ${project.comment} -->
+		<div class="project-logo">
+			<img
+				src="${project.logo}"
+				alt="${project.title} Logo"
+			/>
+		</div>
+		<div class="project-info text-left">
+			<h3>${project.title}</h3>
+			${project.description.map((desc) => `<p>${desc}</p>`).join('\n')}
+		</div>
+	</div>
+	`;
+
+	for (const project of projectDetails) {
+		const projectDivHTML = projectDiv(project);
+		document
+			.querySelector('#work')
+			.insertAdjacentHTML('beforeend', projectDivHTML);
+	}
+};
+
 export const compile = async ({ index }) => {
 	const dom = new JSDOM(index);
 	const { document } = dom.window;
 
+	addProjects({ document });
 	inlineElements({ document });
 
 	const serialized = dom.serialize();

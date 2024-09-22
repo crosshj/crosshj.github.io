@@ -1,5 +1,5 @@
 {
-	"watch": ["./local", "compile.js"],
+	"watch": ["./local", "./*.js"],
 	"ext": "js,json",
 	"exec": "lws -c local/lws.config.js",
 	"ignore": ["node_modules"],
