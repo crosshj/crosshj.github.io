@@ -1,7 +1,7 @@
 import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import { minify } from 'html-minifier';
-import { projectDetails } from './portfolioData.js';
+import { about, projectDetails, services } from './portfolioData.js';
 
 const inlineElements = ({ document }) => {
 	const images = document.querySelectorAll('img');
@@ -94,7 +94,16 @@ const inlineElements = ({ document }) => {
 	}
 };
 
+const addAbout = ({ document }) => {
+	const aboutDiv = document.querySelector('#about');
+	aboutDiv.innerHTML = about.map((para) => `<p>${para}</p>`).join('\n');
+};
+
 const addProjects = ({ document }) => {
+	const workDiv = document.querySelector('#work');
+
+	workDiv.insertAdjacentHTML('beforeend', `<h2>${projectDetails.title}</h2>`);
+
 	const projectDiv = (project) => `
 	<div class="project">
 		<!-- ${project.comment} -->
@@ -111,19 +120,33 @@ const addProjects = ({ document }) => {
 	</div>
 	`;
 
-	for (const project of projectDetails) {
+	for (const project of projectDetails.list) {
 		const projectDivHTML = projectDiv(project);
-		document
-			.querySelector('#work')
-			.insertAdjacentHTML('beforeend', projectDivHTML);
+		workDiv.insertAdjacentHTML('beforeend', projectDivHTML);
 	}
+};
+
+const addServices = ({ document }) => {
+	const servicesDiv = document.querySelector('#services');
+
+	servicesDiv.innerHTML = `
+		<h2>${services.title}</h2>
+		${services.description.map((para) => `<p>${para}</p>`).join('\n')}
+		<ul>
+			${services.list.map((item) => `<li>${item}</li>`).join('\n')}
+		</ul>
+		<p>${services.outro}</p>
+	`;
 };
 
 export const compile = async ({ index }) => {
 	const dom = new JSDOM(index);
 	const { document } = dom.window;
 
+	addAbout({ document });
 	addProjects({ document });
+	addServices({ document });
+
 	inlineElements({ document });
 
 	const serialized = dom.serialize();
