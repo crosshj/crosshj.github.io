@@ -11,6 +11,25 @@
 	--button-selected-text-color: #007bff;
 
 	--section-max-width: 900px;
+
+	--link-color: #68a9ff;
+	--link-hover-color: #abccff;
+	--link-active-color: #aacbff;
+	--link-visited-color: #c188ff;
+}
+
+/* Link colors */
+a {
+	color: var(--link-color);
+}
+a:hover {
+	color: var(--link-hover-color);
+}
+a:active {
+	color: var(--link-active-color);
+}
+a:visited {
+	color: var(--link-visited-color);
 }
 
 .obfuscated {
@@ -111,6 +130,10 @@ header .container {
 	margin-right: 10px;
 }
 
+header a {
+	color: inherit !important;
+}
+
 .logo {
 	font-size: 2em;
 	margin-right: 5px;
@@ -199,10 +222,12 @@ ul {
 	margin: 0 auto;
 	max-width: var(--section-max-width);
 	text-align: left;
-	background: #1e1e1e;
 	border-radius: 5px;
 	padding-block: 10px;
 	margin-bottom: 1.5em;
+	/* background: #1e1e1e; */
+	border: 2px solid #333;
+	box-sizing: border-box;
 }
 
 ul li {
