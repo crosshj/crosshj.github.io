@@ -41,7 +41,9 @@ body {
 
 #splash {
 	width: 100vw;
+	height: 60vh;
 	min-height: 60vh;
+	max-height: 60vh;
 	position: relative;
 	margin-top: 80px;
 	display: flex;
