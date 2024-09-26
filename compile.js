@@ -111,6 +111,7 @@ const addProjects = ({ document }) => {
 			<img
 				src="${project.logo}"
 				alt="${project.title} Logo"
+				loading="lazy"
 			/>
 		</div>
 		<div class="project-info text-left">
