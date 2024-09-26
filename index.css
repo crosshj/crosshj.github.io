@@ -13,6 +13,10 @@
 	--section-max-width: 900px;
 }
 
+.obfuscated {
+	visibility: hidden;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 	font-optical-sizing: auto;

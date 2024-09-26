@@ -228,6 +228,13 @@ const DOMContentLoaded = () => {
 		);
 		requestAnimationFrame(render);
 	}
+
+	decodeObfuscatedLinks();
 };
+
+/* prettier-ignore */
+class Encoder{constructor(a=123){this.a=a}_b(c){return[...c].map(d=>String.fromCharCode(d.charCodeAt(0)^this.a)).join('')}encode(e){return btoa(this._b(e))}decode(f){return this._b(atob(f))}}
+/* prettier-ignore */
+const decodeObfuscatedLinks=()=>{document.querySelectorAll('a.obfuscated').forEach(a=>{const b=new Encoder();let c=b.decode(a.getAttribute('href'));a.setAttribute('href',c);let d=b.decode(a.textContent);a.textContent=d;a.classList.remove('obfuscated')})};
 
 document.addEventListener('DOMContentLoaded', DOMContentLoaded);
