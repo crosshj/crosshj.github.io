@@ -48,7 +48,7 @@ export const projectDetails = {
 		},
 		{
 			title: 'Transport4',
-			logo: 'assets/logos/transport4.png',
+			logo: 'assets/logos/transport4.webp',
 			description: [
 				'Senior Developer / Architect: Developed and re-architected microservices for email rendering and user data storage. ',
 				'Used AWS Lambda, SQS/SNS, and TypeScript to create resilient solutions for search and legacy system integration.',
