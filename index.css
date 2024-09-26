@@ -225,8 +225,8 @@ ul {
 	border-radius: 5px;
 	padding-block: 10px;
 	margin-bottom: 1.5em;
-	/* background: #1e1e1e; */
-	border: 2px solid #333;
+	background: #1e1e1e;
+	/* border: 2px solid #333; */
 	box-sizing: border-box;
 }
 

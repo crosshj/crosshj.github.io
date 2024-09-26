@@ -1,3 +1,5 @@
+const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
 // Vertex shader
 const vertexShaderSource = `
 attribute vec4 a_position;
@@ -76,6 +78,7 @@ const getRenderFunction = (args, callback) => {
 	} = args;
 	const interval = 1000 / fps; // Time per frame in milliseconds
 	let lastFrameTime = 0;
+	let hasRendered = false;
 	return function render(time) {
 		time *= speed * 0.001; // Convert to seconds
 
@@ -118,6 +121,11 @@ const getRenderFunction = (args, callback) => {
 		// Draw the full-screen quad
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
 
+		// disable animation on mobile
+		if (isMobile && hasRendered) {
+			return;
+		}
+		hasRendered = true;
 		callback();
 	};
 };
