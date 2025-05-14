@@ -29,6 +29,15 @@ export const projectDetails = {
 	title: 'Work',
 	list: [
 		{
+			title: 'Milliman | Pluritem',
+			logo: 'assets/logos/milliman.svg',
+			description: [
+				'Developer: Our goal is to simplify health records and analytics for patients, providers, and health systems.  We use React/NextJS, GraphQL, Mongo, full range of AWS services, and more.',
+				'We are currently enhancing our provider offering and improving our administrative tooling.',
+			],
+			comment: 'Milliman Pluritem [October 2024 - Present]',
+		},
+		{
 			title: 'Anthroware',
 			logo: 'assets/logos/anthroware.svg',
 			description: [
